@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yummy</title>
+  </head>
+
+  <body class="bg-body-tertiary">
+    <span class="loader position-absolute start-50 top-50 bg-primary"></span>
+    <!-- !side bar section -->
+    <div id="sideBar" class="d-flex justify-content-center">
+      <div class="sideItems bg-dark-subtle p-4">
+        <div class="items">
+          <h5 id="searchSelection" class="py-2">Search</h5>
+          <h5 id="catSelection" class="py-2">Categories</h5>
+          <h5 id="areaSelection" class="py-2">Area</h5>
+          <h5 id="ingSelection" class="py-2">Ingredients</h5>
+          <h5 id="contactSelection" class="py-2">Contact Us</h5>
+        </div>
+        <div class="position-fixed bottom-0 mb-5">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg sideBarHeader">
+        <div class="">
+          <img src="./img/logo.png" class="my-3" />
+        </div>
+        <i class="fa-solid fa-bars display-5"></i>
+      </div>
+    </div>
+    <div class="container d-none justify-content-between my-5" id="searchSection">
+      <input
+        type="text"
+        name="nameSearch"
+        id="nameSearch"
+        placeholder="Search by name"
+        class="form-control me-3"
+      />
+      <input
+        type="text"
+        name="firstLetter"
+        maxlength="1"
+        id="firstLetter"
+        placeholder="Search by first letter"
+        class="form-control ms-3"
+      />
+    </div>
+    <div class="container">
+      <div class="row py-5 g-4" id="rowData"></div>
+    </div>
+    <div class="d-none container " id="contactSection">
+      <form id="contactForm" class="form-control-plaintext w-100">
+        <label for="name">Name:</label>
+        <input type="text" class="w-50" id="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="w-50" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" class="w-50" pattern="[0-9]{10}" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" class="w-50" min="1" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="w-50" required><br><br>
+        
+        <label for="repassword">Confirm Password:</label>
+        <input type="password" id="repassword"  class="w-50"required><br><br>
+        
+        <button type="submit" id="submitBtn" class="btn btn-danger" disabled>Submit</button>
+    </form>
+    </div>
+
+    <script src="./main jv/bootstrap.bundle.min.js"></script>
+    <script src="./main jv/jquery-3.7.1.min.js"></script>
+    <script src="./main jv/main.js"></script>
+  </body>
+</html>
